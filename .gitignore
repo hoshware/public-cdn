@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+locations.json
+node_modules
+*.cert
+*.pem
+*.key
