@@ -1,0 +1,74 @@
+@import '_reset.css';
+@import '_containers.css';
+@import '_padding.css';
+@import '_fonts.css';
+@import '_backgrounds.css';
+
+:root {
+  /* Font sizes */
+  --hosh-font-size-ten: 10pt;
+  --hosh-font-size-twelve: 12pt;
+  --hosh-font-size-sixteen: 16pt;
+  --hosh-font-size-twenty: 20pt;
+  --hosh-font-size-twenty-four: 24pt;
+  --hosh-font-size-thirty-two: 32pt;
+
+  /* Borders */
+  --hosh-border-two: 2px;
+  --hosh-border-four: 4px;
+  --hosh-border-six: 6px;
+  --hosh-border-eight: 8px;
+
+  /* Spacing */
+  --hosh-spacing-half: 0.5rem;
+  --hosh-spacing-one: 1rem;
+  --hosh-spacing-two: 2rem;
+  --hosh-spacing-four: 4rem;
+
+  /* Dimensions */
+  --hosh-width-desktop: 1200px;
+
+  /* Colors */
+  --hosh-color-off-red: #dd3030;
+  --hosh-color-off-white: #f0f0f0;
+  --hosh-color-off-blue: #3030dd;
+  --hosh-color-off-brown: #704020;
+  --hosh-color-off-brown-light: #f0d0a0;
+  --hosh-color-gray-a: #a0a0a0;
+
+  /* Color Theme */
+  --hosh-color-primary: var(--hosh-color-off-blue);
+  --hosh-color-secondary: var(--hosh-color-off-brown);
+  --hosh-color-warn: var(--hosh-color-off-red);
+  --hosh-color-surface: var(--hosh-color-off-white);
+  --hosh-color-second-surface: var(--hosh-color-off-brown-light);
+  --hosh-color-border: var(--hosh-color-gray-a);
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: var(--hosh-font-size-twelve);
+}
+
+body {
+  background-color: var(--hosh-color-surface);
+}
+
+h1 {
+  font-size: var(--hosh-font-size-thirty-two);
+  padding-inline: var(--hosh-spacing-one);
+}
+
+h2 {
+  font-size: var(--hosh-font-size-lg);
+  padding-inline: var(--hosh-spacing-one);
+}
+
+h3,
+h5,
+h6 {
+  font-size: var(--hosh-font-size-twelve);
+  padding-inline: var(--hosh-spacing-one);
+}

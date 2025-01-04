@@ -1,0 +1,19 @@
+/* Fonts */
+.hosh-font-size-ten {
+  font-size: var(--hosh-font-size-ten);
+}
+.hosh-font-size-twelve {
+  font-size: var(--hosh-font-size-twelve);
+}
+.hosh-font-size-sixteen {
+  font-size: var(--hosh-font-size-sixteen);
+}
+.hosh-font-size-twenty {
+  font-size: var(--hosh-font-size-twenty);
+}
+.hosh-font-size-twenty-four {
+  font-size: var(--hosh-font-size-twenty-four);
+}
+.hosh-font-size-thirty-two {
+  font-size: var(--hosh-font-size-thirty-two);
+}

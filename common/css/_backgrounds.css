@@ -1,0 +1,6 @@
+.hosh-bg-color-surface {
+  background-color: var(--hosh-color-surface);
+}
+.hosh-bg-color-second-surface {
+  background-color: var(--hosh-color-second-surface);
+}

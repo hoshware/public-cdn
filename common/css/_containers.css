@@ -1,0 +1,56 @@
+/* Display */
+.hosh-display-block {
+  display: block;
+}
+.hosh-display-flex {
+  display: flex;
+}
+.hosh-display-grid {
+  display: grid;
+}
+.hosh-display-inline {
+  display: inline;
+}
+.hosh-display-inline-block {
+  display: inline-block;
+}
+
+/* Flex */
+.hosh-flex-column {
+  flex-direction: column;
+}
+.hosh-flex-row {
+  flex-direction: row;
+}
+
+/* Gaps */
+.hosh-flex-gap-half {
+  gap: var(--hosh-spacing-half);
+}
+.hosh-flex-gap-one {
+  gap: var(--hosh-spacing-one);
+}
+.hosh-flex-gap-two {
+  gap: var(--hosh-spacing-two);
+}
+.hosh-flex-gap-four {
+  gap: var(--hosh-spacing-four);
+}
+
+/* Justify - Main axis */
+.hosh-justify-content-space-between {
+  justify-content: space-between;
+}
+.hosh-justify-content-space-center {
+  justify-content: center;
+}
+
+/* Align - Cross axis */
+.hosh-align-items-center {
+  align-items: center;
+}
+
+/* Widths */
+.hosh-width-desktop {
+  width: clamp(320px, 90%, 1200px);
+}
