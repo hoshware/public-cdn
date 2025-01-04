@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "css": "postcss ./common/css/main.css -o ./common/css/main.min.css --use cssnano"
+    "css": "postcss ./common/css/main.css -o ./common/css/min/main.min.css"
   },
   "dependencies": {
+    "postcss-import": "^16.1.0",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
