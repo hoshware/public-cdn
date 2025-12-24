@@ -1,0 +1,2 @@
+convert:
+	npm run convert

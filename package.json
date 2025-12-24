@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "css": "postcss ./common/css/main.css -o ./common/css/min/main.min.css"
+    "css": "postcss ./common/css/main.css -o ./common/css/min/main.min.css",
+    "convert": "node convert-to-webp.esm.js"
   },
   "dependencies": {
     "postcss-import": "^16.1.0",
