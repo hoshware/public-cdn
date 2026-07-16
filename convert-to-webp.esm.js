@@ -1,6 +1,9 @@
 import fs from 'fs/promises';
+import fsSync from 'fs';
 import path from 'path';
 import sharp from 'sharp';
+
+const FOLDERS = ['dogparkly.com/images', 'instagram', 'qteabobafood.com'];
 
 // Define the directory containing images
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
@@ -11,6 +14,10 @@ const convertToWebP = async (filePath) => {
   const outputFilePath = path.join(path.dirname(filePath), `${fileName}.webp`);
 
   try {
+    if (fsSync.existsSync(outputFilePath)) {
+      console.log(`Already exists: ${outputFilePath}`);
+      return;
+    }
     // Convert the image to WebP
     await sharp(filePath)
       .webp({
@@ -50,4 +57,7 @@ const processImages = async (folderPath) => {
 };
 
 // Run the script
-processImages('dogparkly.com/images');
+
+for (const folder of FOLDERS) {
+  await processImages(folder);
+}
